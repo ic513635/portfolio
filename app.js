@@ -161,7 +161,7 @@ function renderHome() {
     grid.innerHTML = [...newCaseCards, ...existingCards].join('');
   }
   const heading = document.querySelector('#work .section-heading');
-  if (heading) heading.innerHTML = '<div><p class="eyebrow">SELECTED WORK</p><h2>Selected Work</h2></div>';
+  if (heading) heading.innerHTML = '<div><h2>Selected Work</h2><p class="section-aside">A look at the products and workflows I’ve helped shape.</p></div>';
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 }

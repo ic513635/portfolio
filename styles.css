@@ -198,3 +198,11 @@
 @media(max-width:680px){.cv-across-grid{grid-template-columns:1fr;gap:10px}.cv-phase{padding-left:12px}.cv-phase-heading{align-items:flex-start;flex-direction:column;gap:2px}.cv-phase-heading h3{font-size:13px}.cv-positioning{font-size:12px;line-height:1.65}}
 .work-section .project-media{width:100%;min-width:0}
 @media(max-width:680px){.work-section .project-grid{grid-template-columns:1fr}}
+
+/* Selected Work heading copy alignment */
+.work-section .section-heading h2{margin-top:-32px}
+.work-section .section-heading .section-aside{max-width:none;white-space:nowrap}
+@media(max-width:680px){.work-section .section-heading .section-aside{max-width:295px;white-space:normal}}
+
+@media(min-width:681px){.hero-intro{white-space:nowrap}}
+.work-section .section-heading .section-aside{margin-top:12px}
