@@ -44,7 +44,7 @@ const projects = [
     context: 'The work redesigned the end-to-end shopping cart around customer needs and merchant business goals. Target users were customers buying products through live streams.',
     approach: 'I interviewed users, mapped the user flow and defined the product specification for the checkout and payment work.',
     decisions: ['Integrate local logistics status and tracking information.', 'Remember shipping details used previously.', 'Support country-specific payment methods, including credit cards, PayPal and cash on delivery.'],
-    outcome: 'The documented goal was to revamp live-stream shopping checkout. Outcome metrics are to be confirmed.'
+    outcome: 'The redesign defined an end-to-end checkout flow for live-stream shopping across Taiwan, Thailand, Vietnam and Japan, including local logistics information, saved shipping details, and country-specific payment methods.'
   },
   {
     id: 'handsup-orders', company: 'HANDSUP · 17 LIVE', title: 'More flexible order management',
@@ -55,7 +55,7 @@ const projects = [
     context: 'Items can sell out during a live stream, so merchants may need to split an order. A customer may also order across several live streams and want the items shipped together. In-store pickup creates another case where the merchant needs to update order status manually.',
     approach: 'I interviewed merchants, clarified editing scenarios by order status, reviewed existing logistics and payment logic, and defined user stories, scope and order management rules.',
     decisions: ['Allow an order to be split into multiple orders.', 'Allow multiple orders from the same customer to be merged for shipment.', 'Allow merchants to adjust order status for cases such as in-store pickup.', 'Define editing rules for each order status and prepare product verification items.'],
-    outcome: 'The project goal was more flexible order editing for merchants. Outcome metrics are to be confirmed.'
+    outcome: 'The work established order-editing rules for common fulfilment scenarios: splitting orders when items sell out, combining a customer’s purchases for shipment, and updating order status for in-store pickup.'
   },
   {
     id: 'worklink-clockin', company: 'WORKLINK', title: 'Everyday time and overtime tasks',
@@ -77,7 +77,7 @@ const projects = [
     context: 'WorkLink brought together tools such as instant messaging, shared drive, clock in/out and leave/overtime applications for small and medium businesses.',
     approach: 'The available portfolio confirms dashboard design as a case and notes responsibility for consistent UX/UI across iOS, Android and the website.',
     decisions: ['Design within an all-in-one HR product.', 'Maintain a consistent interface across platforms.'],
-    outcome: 'Dashboard-specific design rationale and measured outcomes are to be confirmed.'
+    outcome: 'The dashboard work focused on presenting everyday tools within WorkLink’s all-in-one HR product and maintaining a consistent UX/UI across iOS, Android and web.'
   }
 ];
 
