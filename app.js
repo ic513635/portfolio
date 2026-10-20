@@ -99,18 +99,30 @@ const selectedWork = [
 
 const caseStudies = {
   funpodium: {
-    ...selectedWork[0], subtitle: 'Legacy workflow redesign for Customer Service & Compliance',
-    roleTitle: 'UX Designer', scope: 'Wireframes · Mockup', when: 'Released Oct 2022',
-    question: 'How might Customer Service and Compliance teams find the information they need and resolve member issues with fewer steps and fewer mistakes?',
-    context: 'This enterprise back-office platform helps Customer Service and Compliance teams investigate member issues and account security concerns. As the product grew, information became scattered and legacy workflows accumulated extra steps, making it harder for teams to understand account status and complete tasks accurately.',
-    approach: 'I reviewed the existing workflows and information needs before redesigning individual screens. I worked with PMs and engineers to clarify product rules, identify repeated or unnecessary actions, and reorganize the experience around the tasks teams needed to complete.',
+    ...selectedWork[0], title: 'Enterprise Customer Management Platform',
+    subtitle: 'Redesigning Bonus Management for clearer record review and performance insights.',
+    tags: ['Bonus Management', 'Performance Review'],
+    roleTitle: 'UX Designer', scope: 'Mockup', when: 'Released Oct 2022',
+    question: 'How might we help teams configure complex bonus campaigns accurately and monitor their performance after launch?',
+    context: 'Creating a bonus involves more than entering basic information. Teams need to define who is eligible, set bonus and release rules, and understand the potential audience before publishing. After launch, they also need to track applications, release progress, and campaign performance from the back office.',
+    approach: 'I structured bonus setup as a four-step workflow: basic information, eligibility criteria, bonus rules, and a final preview. I also designed the performance view to bring campaign metrics, applicant distribution, status summaries, and member-level records together for ongoing monitoring.',
     decisions: [
-      'Bring member information and account status into a clearer information hierarchy.',
-      'Combine or remove repeated actions and redundant confirmations to reduce steps and prevent errors.',
-      'Build custom components on Ant Design, with consistent variants, interaction states, layouts, responsive behavior, and reusable patterns.'
+      'Break setup into clear steps so operators can focus on one group of decisions at a time.',
+      'Organize eligibility and bonus rules separately to make targeting conditions and release requirements easier to review.',
+      'Show an estimated audience during setup to help teams understand the reach of their criteria before proceeding.',
+      'Bring campaign metrics and member records together so teams can review performance at both summary and record level.',
+      'Use a final preview to consolidate settings before the bonus is submitted.'
     ],
-    outcome: 'The redesigned workflow reduced the number of steps and operational errors, and was followed by fewer related support tickets. Internal users responded positively to the clearer experience. The design system established alongside the product also gave future workflow improvements a more consistent foundation.',
-    caption: 'A redesigned customer management workflow with clearer information hierarchy and fewer steps.'
+    extraVisuals: [
+      { image: 'funpodium_bonus_step_1.png', caption: 'Step 1 — Basic information: Define the bonus, category, wallet, value type, period, and recurrence.' },
+      { image: 'funpodium_bonus_step_2.png', caption: 'Step 2 — Applying criteria: Set eligible members and targeting criteria, with an estimated audience shown alongside.' },
+      { image: 'funpodium_bonus_step_3.png', caption: 'Step 3 — Bonus rules: Configure deposit requirements, bonus limits, release conditions, availability, and expiry.' },
+      { image: 'funpodium_bonus_step_4.png', caption: 'Step 4 — Preview: Review the configured bonus details and rules before submission.' },
+      { image: 'funpodium_bonus_performance.png', caption: 'Performance view: Monitor campaign metrics, applicant distribution, bonus statuses, and member-level records.' }
+    ],
+    outcomeTitle: 'A connected workflow from setup<br><em>to monitoring.</em>',
+    outcome: 'The design connected bonus configuration with post-launch monitoring. Teams could define campaign details, targeting criteria, and release rules through a guided setup flow, then review performance through campaign metrics and member-level status records.',
+    caption: 'A redesigned bonus management interface for finding records and reviewing performance.'
   },
   'identity-verification': {
     ...selectedWork[1], subtitle: 'Redesigning verification around security requirements and user intent',
@@ -147,7 +159,11 @@ function renderCaseHeroVisual(p) {
 
 function renderCaseGallery(p) {
   return p.extraVisuals?.length
-    ? `<section class="case-gallery wrap">${p.extraVisuals.map((img, i) => `<figure><img src="${asset(img)}" alt="${p.company} supporting design visual ${i + 1}" loading="lazy"></figure>`).join('')}</section>`
+    ? `<section class="case-gallery wrap">${p.extraVisuals.map((item, i) => {
+      const img = typeof item === 'string' ? item : item.image;
+      const caption = typeof item === 'string' ? `${p.company} supporting design visual ${i + 1}` : item.caption;
+      return `<figure><img src="${asset(img)}" alt="${caption}" loading="lazy"><figcaption>${caption}</figcaption></figure>`;
+    }).join('')}</section>`
     : '';
 }
 

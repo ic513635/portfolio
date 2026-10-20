@@ -206,3 +206,5 @@
 
 @media(min-width:681px){.hero-intro{white-space:nowrap}}
 .work-section .section-heading .section-aside{margin-top:12px}
+.case-gallery figcaption{font-size:10px;line-height:1.6;color:#75848b;letter-spacing:.04em;text-align:center;max-width:560px}
+.case-gallery figure{row-gap:16px}
