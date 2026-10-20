@@ -10,7 +10,7 @@ const projects = [
     context: 'The dashboard served client marketers and internal Customer Success Managers. Interviews surfaced difficulty spotting trends in daily performance, understanding accumulated metrics and seeing the same view as a client.',
     approach: 'I interviewed client-side marketers and internal CSMs, clarified the problems, created wireframes and prototypes, and validated the direction with usability testing.',
     decisions: ['Bring key performance metrics forward in card layouts.', 'Use line charts to make daily trends easier to scan.', 'Clarify metric definitions and identify meaningful accumulated data.', 'Add a quick switch between admin and client views.', 'Use filters for duration, device and segment.'],
-    outcome: 'Usability feedback supported the value of trend visualization and at-a-glance metrics. CSM feedback also raised the need to distinguish internal metrics from the client view. Quantitative impact was not provided.',
+    outcome: 'Usability feedback supported the value of trend visualization and at-a-glance metrics. CSM feedback also raised the need to distinguish internal metrics from the client view.',
     visualLabel: 'CAMPAIGN PERFORMANCE DASHBOARD'
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     context: 'The existing campaign setup had seven steps. Interviews with client marketers and internal Customer Success Managers surfaced confusing interactions, difficulty customizing creative with HTML/CSS, a need for responsive campaigns, and a lack of preview before publishing.',
     approach: 'I interviewed client and internal users, clarified the problems, created wireframes and prototypes, and tested the design with users.',
     decisions: ['Group related settings and show step-by-step progress.', 'Use cards, icons and interactive controls instead of a syntax editor.', 'Offer creative components such as timers, buttons and image uploads.', 'Let users preview the campaign while designing and set its primary color directly.', 'Plan for responsive campaign output and use precise wording to reduce misuse.'],
-    outcome: 'Feedback from Japan and Southeast Asia CSMs described the new setup as easier to follow and more precise. They also asked for additional interactive elements and customization options. No quantitative results were provided.'
+    outcome: 'Feedback from Japan and Southeast Asia CSMs described the new setup as easier to follow and more precise. They also asked for additional interactive elements and customization options.'
   },
   {
     id: 'handsup-live', company: 'HANDSUP · 17 LIVE', title: 'Tools for merchants selling on live video',
@@ -33,7 +33,8 @@ const projects = [
     context: 'HandsUP served Taiwan, Japan, Thailand and Vietnam. Interviews focused on merchants and KOLs who sell or promote products through live streaming. Needs included tracking real-time viewers, replying to audience messages, showing the product currently being promoted, and managing products and inventory during a live session.',
     approach: 'I conducted user interviews and created wireframes for the merchant live-streaming app.',
     decisions: ['Show real-time viewers and audience messages during a live session.', 'Let merchants create products and manage inventory in the app.', 'Make the currently promoted product available for viewers to open and buy.', 'Explore small interactive games to engage the audience.'],
-    outcome: 'These features were documented as project goals. Usage or business impact was not provided.'
+    outcomeTitle: 'The interviews surfaced how much merchants need to manage during a live session',
+    outcome: 'Engaging with viewers, handling products and inventory, and making the featured item easy to find and buy. I translated these needs into wireframes that brought audience interaction and product management into the live-selling experience. This work taught me to design live commerce around the merchant’s attention in the moment, keeping essential tasks accessible without pulling focus from the session.'
   },
   {
     id: 'handsup-cart', company: 'HANDSUP · 17 LIVE', title: 'Bring the shopping journey together',
@@ -68,7 +69,8 @@ const projects = [
     context: 'WorkLink is an all-in-one HR product for small and medium businesses. Employees could clock in and out from anywhere and apply for overtime through the app.',
     approach: 'I designed the user flow, wireframes, mockups and prototype for the feature.',
     decisions: ['Support clock-in and clock-out away from a fixed workplace.', 'Provide an in-app overtime application flow.'],
-    outcome: 'The portfolio states this feature introduced new product pricing and reached more users. No user counts or other measured results were provided.'
+    outcomeTitle: 'A clearer way to manage everyday attendance',
+    outcome: 'I designed the clock-in, clock-out, and overtime application flows for employees working across different locations. By bringing these tasks into the WorkLink app, employees could record work time and submit overtime requests as part of their daily routine. This project strengthened my ability to turn everyday workplace requirements into clear, end-to-end mobile workflows—from mapping user flows to prototyping practical interactions.'
   },
   {
     id: 'worklink-dashboard', company: 'WORKLINK', title: 'Redesigning the WorkLink dashboard',
