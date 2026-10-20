@@ -44,7 +44,8 @@ const projects = [
     context: 'The work redesigned the end-to-end shopping cart around customer needs and merchant business goals. Target users were customers buying products through live streams.',
     approach: 'I interviewed users, mapped the user flow and defined the product specification for the checkout and payment work.',
     decisions: ['Integrate local logistics status and tracking information.', 'Remember shipping details used previously.', 'Support country-specific payment methods, including credit cards, PayPal and cash on delivery.'],
-    outcome: 'The redesign defined an end-to-end checkout flow for live-stream shopping across Taiwan, Thailand, Vietnam and Japan, including local logistics information, saved shipping details, and country-specific payment methods.'
+    outcomeTitle: 'A checkout flow for live commerce<br><em>across four markets.</em>',
+    outcome: 'I defined an end-to-end checkout flow for live-stream purchases in Taiwan, Thailand, Vietnam and Japan, accounting for local logistics and tracking, saved shipping details, and country-specific payment methods.'
   },
   {
     id: 'handsup-orders', company: 'HANDSUP · 17 LIVE', title: 'More flexible order management',
@@ -55,7 +56,8 @@ const projects = [
     context: 'Items can sell out during a live stream, so merchants may need to split an order. A customer may also order across several live streams and want the items shipped together. In-store pickup creates another case where the merchant needs to update order status manually.',
     approach: 'I interviewed merchants, clarified editing scenarios by order status, reviewed existing logistics and payment logic, and defined user stories, scope and order management rules.',
     decisions: ['Allow an order to be split into multiple orders.', 'Allow multiple orders from the same customer to be merged for shipment.', 'Allow merchants to adjust order status for cases such as in-store pickup.', 'Define editing rules for each order status and prepare product verification items.'],
-    outcome: 'The work established order-editing rules for common fulfilment scenarios: splitting orders when items sell out, combining a customer’s purchases for shipment, and updating order status for in-store pickup.'
+    outcomeTitle: 'Order editing shaped around<br><em>fulfillment needs.</em>',
+    outcome: 'Merchant interviews surfaced scenarios the order flow needed to support: splitting orders when items sell out, combining purchases from multiple live streams for shipment, and updating order status for in-store pickup. I translated these into order-status rules and product verification items.'
   },
   {
     id: 'worklink-clockin', company: 'WORKLINK', title: 'Everyday time and overtime tasks',
@@ -77,7 +79,8 @@ const projects = [
     context: 'WorkLink brought together tools such as instant messaging, shared drive, clock in/out and leave/overtime applications for small and medium businesses.',
     approach: 'The available portfolio confirms dashboard design as a case and notes responsibility for consistent UX/UI across iOS, Android and the website.',
     decisions: ['Design within an all-in-one HR product.', 'Maintain a consistent interface across platforms.'],
-    outcome: 'The dashboard work focused on presenting everyday tools within WorkLink’s all-in-one HR product and maintaining a consistent UX/UI across iOS, Android and web.'
+    outcomeTitle: 'A consistent dashboard across<br><em>an all-in-one HR product.</em>',
+    outcome: 'I designed the WorkLink dashboard and maintained UX/UI consistency across iOS, Android and web. The product brought instant messaging, shared drive, clock-in/out and leave/overtime tools together for small and medium businesses.'
   }
 ];
 
@@ -188,7 +191,7 @@ function renderCase() {
     <section id="case-story" class="case-story wrap"><div class="story-lead"><p class="eyebrow">THE QUESTION</p><h2>${p.question}</h2></div><div class="story-copy"><div><p class="eyebrow">CONTEXT</p><p>${p.context}</p></div><div><p class="eyebrow">APPROACH</p><p>${p.approach}</p></div></div></section>
     <section id="case-decisions" class="decision-section"><div class="wrap decision-wrap"><div><p class="eyebrow">DESIGN DECISIONS</p><h2>What shaped<br><em>the experience.</em></h2></div><ol>${decisions}</ol></div></section>
     ${extras}
-    <section id="case-outcome" class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>What we can say<br><em>with confidence.</em></h2><p>${p.outcome}</p></section>
+    <section id="case-outcome" class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>${p.outcomeTitle || 'What we can say<br><em>with confidence.</em>'}</h2><p>${p.outcome}</p></section>
     <nav class="case-pagination wrap" aria-label="Case study navigation"><a href="case.html?project=${prev.id}"><span>← PREVIOUS</span><b>${prev.company}</b><small>${prev.title}</small></a><a href="case.html?project=${next.id}" class="next-case"><span>NEXT →</span><b>${next.company}</b><small>${next.title}</small></a></nav>`;
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
@@ -210,7 +213,7 @@ function renderStructuredSelectedCase(outlet, p, slug) {
     <section class="case-story wrap"><div class="story-lead"><p class="eyebrow">THE QUESTION</p><h2>${p.question}</h2></div><div class="story-copy"><div><p class="eyebrow">CONTEXT</p><p>${p.context}</p></div><div><p class="eyebrow">APPROACH</p><p>${p.approach}</p></div></div></section>
     <section class="decision-section"><div class="wrap decision-wrap"><div><p class="eyebrow">DESIGN DECISIONS</p><h2>What shaped<br><em>the experience.</em></h2></div><ol>${decisions}</ol></div></section>
     ${extras}
-    <section class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>What we can say<br><em>with confidence.</em></h2><p>${p.outcome}</p></section>
+    <section class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>${p.outcomeTitle || 'What we can say<br><em>with confidence.</em>'}</h2><p>${p.outcome}</p></section>
     <nav class="case-pagination wrap" aria-label="Case study navigation"><a href="case.html?project=${prev.id}"><span>← PREVIOUS</span><b>${prev.company}</b><small>${prev.title}</small></a><a href="case.html?project=${next.id}" class="next-case"><span>NEXT →</span><b>${next.company}</b><small>${next.title}</small></a></nav>`;
 }
 
