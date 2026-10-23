@@ -10,7 +10,7 @@ const projects = [
     context: 'The dashboard served client marketers and internal Customer Success Managers. Interviews surfaced difficulty spotting trends in daily performance, understanding accumulated metrics and seeing the same view as a client.',
     approach: 'I interviewed client-side marketers and internal CSMs, clarified the problems, created wireframes and prototypes, and validated the direction with usability testing.',
     decisions: ['Bring key performance metrics forward in card layouts.', 'Use line charts to make daily trends easier to scan.', 'Clarify metric definitions and identify meaningful accumulated data.', 'Add a quick switch between admin and client views.', 'Use filters for duration, device and segment.'],
-    outcome: 'Usability feedback supported the value of trend visualization and at-a-glance metrics. CSM feedback also raised the need to distinguish internal metrics from the client view.',
+    outcome: 'Usability feedback supported the value of trend visualization and at-a-glance metrics. CSM feedback also raised the need to distinguish internal metrics from the client view. Quantitative impact was not provided.',
     visualLabel: 'CAMPAIGN PERFORMANCE DASHBOARD'
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     context: 'The existing campaign setup had seven steps. Interviews with client marketers and internal Customer Success Managers surfaced confusing interactions, difficulty customizing creative with HTML/CSS, a need for responsive campaigns, and a lack of preview before publishing.',
     approach: 'I interviewed client and internal users, clarified the problems, created wireframes and prototypes, and tested the design with users.',
     decisions: ['Group related settings and show step-by-step progress.', 'Use cards, icons and interactive controls instead of a syntax editor.', 'Offer creative components such as timers, buttons and image uploads.', 'Let users preview the campaign while designing and set its primary color directly.', 'Plan for responsive campaign output and use precise wording to reduce misuse.'],
-    outcome: 'Feedback from Japan and Southeast Asia CSMs described the new setup as easier to follow and more precise. They also asked for additional interactive elements and customization options.'
+    outcome: 'Feedback from Japan and Southeast Asia CSMs described the new setup as easier to follow and more precise. They also asked for additional interactive elements and customization options. No quantitative results were provided.'
   },
   {
     id: 'handsup-live', company: 'HANDSUP · 17 LIVE', title: 'Tools for merchants selling on live video',
@@ -33,8 +33,7 @@ const projects = [
     context: 'HandsUP served Taiwan, Japan, Thailand and Vietnam. Interviews focused on merchants and KOLs who sell or promote products through live streaming. Needs included tracking real-time viewers, replying to audience messages, showing the product currently being promoted, and managing products and inventory during a live session.',
     approach: 'I conducted user interviews and created wireframes for the merchant live-streaming app.',
     decisions: ['Show real-time viewers and audience messages during a live session.', 'Let merchants create products and manage inventory in the app.', 'Make the currently promoted product available for viewers to open and buy.', 'Explore small interactive games to engage the audience.'],
-    outcomeTitle: 'The interviews surfaced how much merchants need to manage during a live session',
-    outcome: 'Engaging with viewers, handling products and inventory, and making the featured item easy to find and buy. I translated these needs into wireframes that brought audience interaction and product management into the live-selling experience. This work taught me to design live commerce around the merchant’s attention in the moment, keeping essential tasks accessible without pulling focus from the session.'
+    outcome: 'These features were documented as project goals. Usage or business impact was not provided.'
   },
   {
     id: 'handsup-cart', company: 'HANDSUP · 17 LIVE', title: 'Bring the shopping journey together',
@@ -45,8 +44,7 @@ const projects = [
     context: 'The work redesigned the end-to-end shopping cart around customer needs and merchant business goals. Target users were customers buying products through live streams.',
     approach: 'I interviewed users, mapped the user flow and defined the product specification for the checkout and payment work.',
     decisions: ['Integrate local logistics status and tracking information.', 'Remember shipping details used previously.', 'Support country-specific payment methods, including credit cards, PayPal and cash on delivery.'],
-    outcomeTitle: 'A checkout flow for live commerce<br><em>across four markets.</em>',
-    outcome: 'I defined an end-to-end checkout flow for live-stream purchases in Taiwan, Thailand, Vietnam and Japan, accounting for local logistics and tracking, saved shipping details, and country-specific payment methods.'
+    outcome: 'The documented goal was to revamp live-stream shopping checkout. Outcome metrics are to be confirmed.'
   },
   {
     id: 'handsup-orders', company: 'HANDSUP · 17 LIVE', title: 'More flexible order management',
@@ -57,8 +55,7 @@ const projects = [
     context: 'Items can sell out during a live stream, so merchants may need to split an order. A customer may also order across several live streams and want the items shipped together. In-store pickup creates another case where the merchant needs to update order status manually.',
     approach: 'I interviewed merchants, clarified editing scenarios by order status, reviewed existing logistics and payment logic, and defined user stories, scope and order management rules.',
     decisions: ['Allow an order to be split into multiple orders.', 'Allow multiple orders from the same customer to be merged for shipment.', 'Allow merchants to adjust order status for cases such as in-store pickup.', 'Define editing rules for each order status and prepare product verification items.'],
-    outcomeTitle: 'Order editing shaped around<br><em>fulfillment needs.</em>',
-    outcome: 'Merchant interviews surfaced scenarios the order flow needed to support: splitting orders when items sell out, combining purchases from multiple live streams for shipment, and updating order status for in-store pickup. I translated these into order-status rules and product verification items.'
+    outcome: 'The project goal was more flexible order editing for merchants. Outcome metrics are to be confirmed.'
   },
   {
     id: 'worklink-clockin', company: 'WORKLINK', title: 'Everyday time and overtime tasks',
@@ -69,8 +66,7 @@ const projects = [
     context: 'WorkLink is an all-in-one HR product for small and medium businesses. Employees could clock in and out from anywhere and apply for overtime through the app.',
     approach: 'I designed the user flow, wireframes, mockups and prototype for the feature.',
     decisions: ['Support clock-in and clock-out away from a fixed workplace.', 'Provide an in-app overtime application flow.'],
-    outcomeTitle: 'A clearer way to manage everyday attendance',
-    outcome: 'I designed the clock-in, clock-out, and overtime application flows for employees working across different locations. By bringing these tasks into the WorkLink app, employees could record work time and submit overtime requests as part of their daily routine. This project strengthened my ability to turn everyday workplace requirements into clear, end-to-end mobile workflows—from mapping user flows to prototyping practical interactions.'
+    outcome: 'The portfolio states this feature introduced new product pricing and reached more users. No user counts or other measured results were provided.'
   },
   {
     id: 'worklink-dashboard', company: 'WORKLINK', title: 'Redesigning the WorkLink dashboard',
@@ -81,8 +77,7 @@ const projects = [
     context: 'WorkLink brought together tools such as instant messaging, shared drive, clock in/out and leave/overtime applications for small and medium businesses.',
     approach: 'The available portfolio confirms dashboard design as a case and notes responsibility for consistent UX/UI across iOS, Android and the website.',
     decisions: ['Design within an all-in-one HR product.', 'Maintain a consistent interface across platforms.'],
-    outcomeTitle: 'A consistent dashboard across<br><em>an all-in-one HR product.</em>',
-    outcome: 'I designed the WorkLink dashboard and maintained UX/UI consistency across iOS, Android and web. The product brought instant messaging, shared drive, clock-in/out and leave/overtime tools together for small and medium businesses.'
+    outcome: 'Dashboard-specific design rationale and measured outcomes are to be confirmed.'
   }
 ];
 
@@ -101,30 +96,18 @@ const selectedWork = [
 
 const caseStudies = {
   funpodium: {
-    ...selectedWork[0], title: 'Enterprise Customer Management Platform',
-    subtitle: 'Redesigning Bonus Management for clearer record review and performance insights.',
-    tags: ['Bonus Management', 'Performance Review'],
-    roleTitle: 'UX Designer', scope: 'Mockup', when: 'Released Oct 2022',
-    question: 'How might we help teams configure complex bonus campaigns accurately and monitor their performance after launch?',
-    context: 'Creating a bonus involves more than entering basic information. Teams need to define who is eligible, set bonus and release rules, and understand the potential audience before publishing. After launch, they also need to track applications, release progress, and campaign performance from the back office.',
-    approach: 'I structured bonus setup as a four-step workflow: basic information, eligibility criteria, bonus rules, and a final preview. I also designed the performance view to bring campaign metrics, applicant distribution, status summaries, and member-level records together for ongoing monitoring.',
+    ...selectedWork[0], subtitle: 'Legacy workflow redesign for Customer Service & Compliance',
+    roleTitle: 'UX Designer', scope: 'Wireframes · Mockup', when: 'Released Oct 2022',
+    question: 'How might Customer Service and Compliance teams find the information they need and resolve member issues with fewer steps and fewer mistakes?',
+    context: 'This enterprise back-office platform helps Customer Service and Compliance teams investigate member issues and account security concerns. As the product grew, information became scattered and legacy workflows accumulated extra steps, making it harder for teams to understand account status and complete tasks accurately.',
+    approach: 'I reviewed the existing workflows and information needs before redesigning individual screens. I worked with PMs and engineers to clarify product rules, identify repeated or unnecessary actions, and reorganize the experience around the tasks teams needed to complete.',
     decisions: [
-      'Break setup into clear steps so operators can focus on one group of decisions at a time.',
-      'Organize eligibility and bonus rules separately to make targeting conditions and release requirements easier to review.',
-      'Show an estimated audience during setup to help teams understand the reach of their criteria before proceeding.',
-      'Bring campaign metrics and member records together so teams can review performance at both summary and record level.',
-      'Use a final preview to consolidate settings before the bonus is submitted.'
+      'Bring member information and account status into a clearer information hierarchy.',
+      'Combine or remove repeated actions and redundant confirmations to reduce steps and prevent errors.',
+      'Build custom components on Ant Design, with consistent variants, interaction states, layouts, responsive behavior, and reusable patterns.'
     ],
-    extraVisuals: [
-      { image: 'funpodium_bonus_step_1.png', caption: 'Step 1 — Basic information: Define the bonus, category, wallet, value type, period, and recurrence.' },
-      { image: 'funpodium_bonus_step_2.png', caption: 'Step 2 — Applying criteria: Set eligible members and targeting criteria, with an estimated audience shown alongside.' },
-      { image: 'funpodium_bonus_step_3.png', caption: 'Step 3 — Bonus rules: Configure deposit requirements, bonus limits, release conditions, availability, and expiry.' },
-      { image: 'funpodium_bonus_step_4.png', caption: 'Step 4 — Preview: Review the configured bonus details and rules before submission.' },
-      { image: 'funpodium_bonus_performance.png', caption: 'Performance view: Monitor campaign metrics, applicant distribution, bonus statuses, and member-level records.' }
-    ],
-    outcomeTitle: 'A connected workflow from setup<br><em>to monitoring.</em>',
-    outcome: 'The design connected bonus configuration with post-launch monitoring. Teams could define campaign details, targeting criteria, and release rules through a guided setup flow, then review performance through campaign metrics and member-level status records.',
-    caption: 'A redesigned bonus management interface for finding records and reviewing performance.'
+    outcome: 'The redesigned workflow reduced the number of steps and operational errors, and was followed by fewer related support tickets. Internal users responded positively to the clearer experience. The design system established alongside the product also gave future workflow improvements a more consistent foundation.',
+    caption: 'A redesigned customer management workflow with clearer information hierarchy and fewer steps.'
   },
   'identity-verification': {
     ...selectedWork[1], subtitle: 'Redesigning verification around security requirements and user intent',
@@ -161,11 +144,7 @@ function renderCaseHeroVisual(p) {
 
 function renderCaseGallery(p) {
   return p.extraVisuals?.length
-    ? `<section class="case-gallery wrap">${p.extraVisuals.map((item, i) => {
-      const img = typeof item === 'string' ? item : item.image;
-      const caption = typeof item === 'string' ? `${p.company} supporting design visual ${i + 1}` : item.caption;
-      return `<figure><img src="${asset(img)}" alt="${caption}" loading="lazy"><figcaption>${caption}</figcaption></figure>`;
-    }).join('')}</section>`
+    ? `<section class="case-gallery wrap">${p.extraVisuals.map((img, i) => `<figure><img src="${asset(img)}" alt="${p.company} supporting design visual ${i + 1}" loading="lazy"></figure>`).join('')}</section>`
     : '';
 }
 
@@ -179,10 +158,24 @@ function renderHome() {
       return `<article class="project-card project-${p.id} ${p.tone}"><a class="project-media" href="case.html?project=${p.id}" aria-label="View ${p.company}: ${p.title}">${media}<span class="media-index">0${index + 1}</span><span class="media-arrow">↗</span></a><div class="project-info"><div class="project-kicker"><span>${p.company}</span><span>${p.tags.join(' · ')}</span></div><h3><a href="case.html?project=${p.id}">${p.title}</a></h3><p>${p.summary}</p><a class="project-link" href="case.html?project=${p.id}">View case study <span>↗</span></a></div></article>`;
     });
     const existingCards = projects.filter(p => p.id !== 'funpodium').map((p, index) => projectCard(p, index + 2));
-    grid.innerHTML = [...newCaseCards, ...existingCards].join('');
+    const cards = [...newCaseCards, ...existingCards];
+    grid.innerHTML = cards.join('');
+    const toggle = document.getElementById('work-toggle');
+    const remainingCards = [...grid.querySelectorAll('.project-card')].slice(4);
+    remainingCards.forEach(card => { card.hidden = true; });
+    if (toggle && remainingCards.length) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        remainingCards.forEach(card => { card.hidden = expanded; });
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        toggle.innerHTML = expanded ? 'Show all projects <span aria-hidden="true">↓</span>' : 'Show fewer projects <span aria-hidden="true">↑</span>';
+      });
+    } else if (toggle) {
+      toggle.hidden = true;
+    }
   }
   const heading = document.querySelector('#work .section-heading');
-  if (heading) heading.innerHTML = '<div><h2>Selected Work</h2><p class="section-aside">A look at the products and workflows I’ve helped shape.</p></div>';
+  if (heading) heading.innerHTML = '<div><p class="eyebrow">SELECTED WORK</p><h2>Selected Work</h2></div>';
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 }
@@ -209,7 +202,7 @@ function renderCase() {
     <section id="case-story" class="case-story wrap"><div class="story-lead"><p class="eyebrow">THE QUESTION</p><h2>${p.question}</h2></div><div class="story-copy"><div><p class="eyebrow">CONTEXT</p><p>${p.context}</p></div><div><p class="eyebrow">APPROACH</p><p>${p.approach}</p></div></div></section>
     <section id="case-decisions" class="decision-section"><div class="wrap decision-wrap"><div><p class="eyebrow">DESIGN DECISIONS</p><h2>What shaped<br><em>the experience.</em></h2></div><ol>${decisions}</ol></div></section>
     ${extras}
-    <section id="case-outcome" class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>${p.outcomeTitle || 'What we can say<br><em>with confidence.</em>'}</h2><p>${p.outcome}</p></section>
+    <section id="case-outcome" class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>What we can say<br><em>with confidence.</em></h2><p>${p.outcome}</p></section>
     <nav class="case-pagination wrap" aria-label="Case study navigation"><a href="case.html?project=${prev.id}"><span>← PREVIOUS</span><b>${prev.company}</b><small>${prev.title}</small></a><a href="case.html?project=${next.id}" class="next-case"><span>NEXT →</span><b>${next.company}</b><small>${next.title}</small></a></nav>`;
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
@@ -231,7 +224,7 @@ function renderStructuredSelectedCase(outlet, p, slug) {
     <section class="case-story wrap"><div class="story-lead"><p class="eyebrow">THE QUESTION</p><h2>${p.question}</h2></div><div class="story-copy"><div><p class="eyebrow">CONTEXT</p><p>${p.context}</p></div><div><p class="eyebrow">APPROACH</p><p>${p.approach}</p></div></div></section>
     <section class="decision-section"><div class="wrap decision-wrap"><div><p class="eyebrow">DESIGN DECISIONS</p><h2>What shaped<br><em>the experience.</em></h2></div><ol>${decisions}</ol></div></section>
     ${extras}
-    <section class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>${p.outcomeTitle || 'What we can say<br><em>with confidence.</em>'}</h2><p>${p.outcome}</p></section>
+    <section class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>What we can say<br><em>with confidence.</em></h2><p>${p.outcome}</p></section>
     <nav class="case-pagination wrap" aria-label="Case study navigation"><a href="case.html?project=${prev.id}"><span>← PREVIOUS</span><b>${prev.company}</b><small>${prev.title}</small></a><a href="case.html?project=${next.id}" class="next-case"><span>NEXT →</span><b>${next.company}</b><small>${next.title}</small></a></nav>`;
 }
 
