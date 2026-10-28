@@ -193,6 +193,9 @@ function renderCase() {
   const facts = [['Role', p.role], ['Scope', p.scope], ['When', p.date || 'Project details to confirm']];
   const heroVisual = renderCaseHeroVisual(p);
   const extras = renderCaseGallery(p);
+  const outcomeSection = p.id === 'worklink-dashboard'
+    ? ''
+    : `<section id="case-outcome" class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>What we can say<br><em>with confidence.</em></h2><p>${p.outcome}</p></section>`;
   const decisions = p.decisions.map((d, i) => `<li><span>0${i+1}</span><p>${d}</p></li>`).join('');
   const prev = allWorkItems[(workIndex - 1 + allWorkItems.length) % allWorkItems.length];
   const next = allWorkItems[(workIndex + 1) % allWorkItems.length];
@@ -202,7 +205,7 @@ function renderCase() {
     <section id="case-story" class="case-story wrap"><div class="story-lead"><p class="eyebrow">THE QUESTION</p><h2>${p.question}</h2></div><div class="story-copy"><div><p class="eyebrow">CONTEXT</p><p>${p.context}</p></div><div><p class="eyebrow">APPROACH</p><p>${p.approach}</p></div></div></section>
     <section id="case-decisions" class="decision-section"><div class="wrap decision-wrap"><div><p class="eyebrow">DESIGN DECISIONS</p><h2>What shaped<br><em>the experience.</em></h2></div><ol>${decisions}</ol></div></section>
     ${extras}
-    <section id="case-outcome" class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>What we can say<br><em>with confidence.</em></h2><p>${p.outcome}</p></section>
+    ${outcomeSection}
     <nav class="case-pagination wrap" aria-label="Case study navigation"><a href="case.html?project=${prev.id}"><span>← PREVIOUS</span><b>${prev.company}</b><small>${prev.title}</small></a><a href="case.html?project=${next.id}" class="next-case"><span>NEXT →</span><b>${next.company}</b><small>${next.title}</small></a></nav>`;
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
