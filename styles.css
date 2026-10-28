@@ -20,11 +20,11 @@
 .project-media img{object-fit:contain;padding:14px}.project-media:hover img{transform:scale(1.015)}
 @media(max-width:680px){.case-sections{gap:10px 16px;flex-wrap:wrap;padding-top:13px;padding-bottom:13px}.case-sections span{width:100%}.case-sections a{font-size:10px}}
 @media(max-width:900px){.cv-wrap{width:calc(100% - 48px)}.cv-layout{grid-template-columns:minmax(0,1.45fr) minmax(205px,.75fr);gap:35px}.cv-sidebar{padding-left:21px}}
-.hero h1{font-size:clamp(42px,5vw,64px);line-height:1.12;max-width:1000px}
+.hero h1{font-size:var(--hero-title-size);line-height:var(--hero-title-line-height);max-width:1000px}
 .hero h1>span{display:block}
 .hero h1>span:last-child{white-space:nowrap}
 .hero-intro{max-width:780px}
-@media(max-width:680px){.hero h1{font-size:clamp(38px,10vw,54px);max-width:none}.hero h1>span:last-child{white-space:normal}.hero-intro{max-width:none}}
+@media(max-width:680px){.hero h1{font-size:var(--hero-title-size);max-width:none}.hero h1>span:last-child{white-space:normal}.hero-intro{max-width:none}}
 @media(max-width:680px){.cv-wrap{width:calc(100% - 40px)}.cv-heading{padding:58px 0 29px}.cv-heading h1{font-size:62px}.cv-title{font-size:17px}.cv-contact-row{align-items:flex-start;flex-direction:column;gap:13px}.cv-summary{grid-template-columns:1fr;gap:0;padding:28px 0 31px}.cv-summary .eyebrow{margin-bottom:15px}.cv-layout{grid-template-columns:1fr;gap:34px;padding-top:32px;padding-bottom:45px}.cv-sidebar{border-left:0;border-top:1px solid var(--line);padding:29px 0 0}.cv-role{padding:19px 0 22px}.cv-role-heading{flex-direction:column;gap:7px}.cv-role-heading>span{order:-1;font-size:9px}.cv-role-intro{margin-top:14px}.cv-endnote{align-items:flex-start;flex-direction:column;gap:13px;padding-bottom:35px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 
@@ -216,3 +216,8 @@
 @media(max-width:680px){.cv-across-grid{grid-template-columns:1fr;gap:10px}.cv-phase{padding-left:12px}.cv-phase-heading{align-items:flex-start;flex-direction:column;gap:2px}.cv-phase-heading h3{font-size:13px}.cv-positioning{font-size:12px;line-height:1.65}}
 .work-section .project-media{width:100%;min-width:0}
 @media(max-width:680px){.work-section .project-grid{grid-template-columns:1fr}}
+
+/* Keep the closing contact heading at the hero title scale on every viewport. */
+:root{--hero-title-size:clamp(42px,5vw,64px);--hero-title-line-height:1.12}
+.hero h1,.contact-inner h2{font-size:var(--hero-title-size);line-height:var(--hero-title-line-height)}
+@media(max-width:680px){:root{--hero-title-size:clamp(38px,10vw,54px)}}
