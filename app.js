@@ -193,7 +193,7 @@ function renderCase() {
   const facts = [['Role', p.role], ['Scope', p.scope], ['When', p.date || 'Project details to confirm']];
   const heroVisual = renderCaseHeroVisual(p);
   const extras = renderCaseGallery(p);
-  const outcomeSection = ['worklink-dashboard', 'worklink-clockin'].includes(p.id)
+  const outcomeSection = ['worklink-dashboard', 'worklink-clockin', 'handsup-orders'].includes(p.id)
     ? ''
     : `<section id="case-outcome" class="outcome-section wrap"><p class="eyebrow">OUTCOME & LEARNING</p><h2>What we can say<br><em>with confidence.</em></h2><p>${p.outcome}</p></section>`;
   const decisions = p.decisions.map((d, i) => `<li><span>0${i+1}</span><p>${d}</p></li>`).join('');
